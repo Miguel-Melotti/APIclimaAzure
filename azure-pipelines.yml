@@ -10,7 +10,7 @@ pool:
   name: 'Default' # Usa o agente self-hosted
 
 variables:
-  solution: './APITempoDIO/APITempoDIO.sln'
+  solution: './WebAPITempoGenerica.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
@@ -40,5 +40,5 @@ steps:
     containerRegistry: 'ACR-Connection'
     repository: 'api-dio-test'
     command: 'buildAndPush'
-    dockerfile: './APITempoDIO/APITempoDIO/Dockerfile'
+    dockerfile: './WebAPITempoGenerica/Dockerfile'
     tags: 'latest'
